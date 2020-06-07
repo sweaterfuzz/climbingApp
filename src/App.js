@@ -1,32 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import styled from 'styled-components'
-
-const TestWrapper = styled.p`
-  margin: 4em;
-  background: black;
-`
+import {FullWidthContainer, ScreenContainer} from './sharedComponents/containers'
+import {NewClimbButton, ClimbHistoryButton} from './sharedComponents/buttons'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TestWrapper>
-            Edit src/App.js and save to reload.
-        </TestWrapper>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScreenContainer>
+
+      <FullWidthContainer>
+      <NewClimbButton>
+        New climb
+      </NewClimbButton>
+      </FullWidthContainer>
+      
+      <FullWidthContainer>
+      <ClimbHistoryButton>
+        See my climbs
+      </ClimbHistoryButton>
+      </FullWidthContainer>
+      
+    </ScreenContainer>
   );
 }
 
