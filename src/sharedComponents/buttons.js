@@ -8,10 +8,11 @@ export const ClimbingButton = styled.button`
   padding: 8px;
   width: 240px;
   margin: 16px;
+  color: ${Colors.almostBlack};
 `
 export const NewClimbButton = styled(ClimbingButton)`
   background-color: ${Colors.lichen};
 `
 export const ClimbHistoryButton = styled(ClimbingButton)`
-  background-color: ${Colors.granite};
+  background-color: ${Colors.limestone};
 `
