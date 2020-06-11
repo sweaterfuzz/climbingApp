@@ -1,26 +1,26 @@
-import React from 'react';
-import './App.css';
-import {FullWidthContainer, ScreenContainer} from './sharedComponents/containers'
-import {NewClimbButton, ClimbHistoryButton} from './sharedComponents/buttons'
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom"
+import './App.css'
+import HomeScreen from './screens/HomeScreen'
+import NewEntryScreen from './screens/NewEntryScreen'
 
 function App() {
   return (
-    <ScreenContainer>
-
-      <FullWidthContainer>
-      <NewClimbButton>
-        New climb
-      </NewClimbButton>
-      </FullWidthContainer>
-      
-      <FullWidthContainer>
-      <ClimbHistoryButton>
-        See my climbs
-      </ClimbHistoryButton>
-      </FullWidthContainer>
-      
-    </ScreenContainer>
-  );
+    <Router>
+      <Switch>
+        <Route path="/newEntry">
+          <NewEntryScreen/>
+        </Route>
+        <Route path="/">
+          <HomeScreen/>
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
