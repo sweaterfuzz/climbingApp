@@ -13,14 +13,15 @@ export default function HomeScreen() {
             New climb
           </NewClimbButton>
         </Link>
-     
       </FullWidthContainer>
       
+      <Link to="/newEntry">
       <FullWidthContainer>
       <ClimbHistoryButton>
         See my climbs
       </ClimbHistoryButton>
       </FullWidthContainer>
+      </Link>
       
     </ScreenContainer>
   )

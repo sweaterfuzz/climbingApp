@@ -6,8 +6,8 @@ export const ClimbingButton = styled.button`
   border: none;
   font-size: 24px;
   padding: 8px;
-  width: 240px;
-  margin: 16px;
+  width: 100%;
+  margin: 16px 0;
   color: ${Colors.almostBlack};
 `
 export const NewClimbButton = styled(ClimbingButton)`
