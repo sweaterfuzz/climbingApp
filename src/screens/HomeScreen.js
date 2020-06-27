@@ -8,20 +8,20 @@ export default function HomeScreen() {
     <ScreenContainer>
 
       <FullWidthContainer>
-        <Link to="/newEntry">
+        <Link to="/newEntry" style={{width:'100%'}}>
           <NewClimbButton>
             New climb
           </NewClimbButton>
         </Link>
       </FullWidthContainer>
       
-      <Link to="/newEntry">
       <FullWidthContainer>
+      <Link to="/newEntry" style={{width:'100%'}}>
       <ClimbHistoryButton>
         See my climbs
       </ClimbHistoryButton>
-      </FullWidthContainer>
       </Link>
+      </FullWidthContainer>
       
     </ScreenContainer>
   )
